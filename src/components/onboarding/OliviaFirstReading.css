@@ -1,0 +1,559 @@
+.olivia-first-reading {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(to bottom, #f0fdf4, #ffffff);
+  min-height: 100vh;
+}
+
+.olivia-first-reading .container {
+  padding: 3rem 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.olivia-first-reading .header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.olivia-first-reading .avatar-icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6b8e23, #556b2f);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.olivia-first-reading .avatar-info h2 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #a8b896;
+}
+
+.olivia-first-reading .avatar-info p {
+  font-size: 0.875rem;
+  color: #c4d4ba;
+}
+
+.olivia-first-reading .content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.olivia-first-reading .message-box {
+  background: white;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  border: 1px solid #e5e7eb;
+  margin-bottom: 2rem;
+}
+
+.olivia-first-reading .message-box p {
+  color: #374151;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.olivia-first-reading .message-box p:last-child {
+  margin-bottom: 0;
+}
+
+.olivia-first-reading .btn-primary {
+  width: 100%;
+  background: #6b8e23;
+  color: white;
+  padding: 1rem;
+  border-radius: 9999px;
+  font-size: 1.125rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.olivia-first-reading .btn-primary:hover {
+  background: #556b2f;
+}
+
+.olivia-first-reading .card-display {
+  width: 16rem;
+  height: 24rem;
+  background: linear-gradient(to bottom right, #8fbc8f, #6b8e23);
+  border-radius: 1rem;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+}
+
+.olivia-first-reading .card-content {
+  text-align: center;
+  color: white;
+}
+
+.olivia-first-reading .card-number {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.olivia-first-reading .card-name {
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+}
+
+.olivia-first-reading .card-info {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.olivia-first-reading .card-info h3 {
+  font-size: 1.875rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+  color: #1f2937;
+  letter-spacing: 0.025em;
+}
+
+.olivia-first-reading .keywords {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.olivia-first-reading .keyword {
+  padding: 0.25rem 0.75rem;
+  background: #c4d4ba;
+  color: #00695c;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+}
+
+.olivia-first-reading .shuffling-screen {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.olivia-first-reading .shuffling-card {
+  width: 8rem;
+  height: 12rem;
+  background: linear-gradient(to bottom right, #8fbc8f, #6b8e23);
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+  animation: pulse-olivia 2s infinite;
+}
+
+@keyframes pulse-olivia {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.olivia-first-reading .shuffling-text {
+  color: #4b5563;
+  animation: pulse-olivia 2s infinite;
+}
+
+.olivia-first-reading .mini-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  border: 1px solid #e5e7eb;
+  margin-bottom: 1.5rem;
+}
+
+.olivia-first-reading .mini-card-img {
+  width: 4rem;
+  height: 6rem;
+  background: linear-gradient(to bottom right, #8fbc8f, #6b8e23);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.olivia-first-reading .mini-card-info h3 {
+  font-weight: 500;
+  color: #1f2937;
+}
+
+.olivia-first-reading .mini-card-info p {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.olivia-first-reading .interpretation-box {
+  background: white;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  border: 1px solid #e5e7eb;
+  margin-bottom: 1.5rem;
+}
+
+.olivia-first-reading .olivia-message {
+  display: flex;
+  gap: 0.75rem;
+  align-items: start;
+}
+
+.olivia-first-reading .olivia-avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: #c4d4ba;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 1.25rem;
+}
+
+.olivia-first-reading .olivia-text {
+  flex: 1;
+  color: #374151;
+  line-height: 1.6;
+  white-space: pre-line;
+}
+
+.olivia-first-reading .strengths-box {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  border: 1px solid #e5e7eb;
+  margin-bottom: 1.5rem;
+}
+
+.olivia-first-reading .strengths-box h4 {
+  font-weight: 500;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.olivia-first-reading .item {
+  display: flex;
+  gap: 0.75rem;
+  align-items: start;
+  margin-bottom: 0.75rem;
+}
+
+.olivia-first-reading .item:last-child {
+  margin-bottom: 0;
+}
+
+.olivia-first-reading .dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  margin-top: 0.5rem;
+  flex-shrink: 0;
+}
+
+.olivia-first-reading .dot-olive {
+  background: #8fbc8f;
+}
+
+.olivia-first-reading .dot-amber {
+  background: #f59e0b;
+}
+
+.olivia-first-reading .item-content p:first-child {
+  font-weight: 500;
+  color: #1f2937;
+  font-size: 0.875rem;
+  margin-bottom: 0.25rem;
+}
+
+.olivia-first-reading .item-content p:last-child {
+  color: #4b5563;
+  font-size: 0.875rem;
+}
+
+.olivia-first-reading .affirmation-box {
+  background: linear-gradient(to bottom right, #8fbc8f, #6b8e23);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+  margin-bottom: 1.5rem;
+}
+
+.olivia-first-reading .affirmation-box p {
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.olivia-first-reading .chips-section {
+  margin-top: auto;
+}
+
+.olivia-first-reading .chips-label {
+  color: #6b7280;
+  font-size: 0.875rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.olivia-first-reading .chip {
+  width: 100%;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 9999px;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: left;
+}
+
+.olivia-first-reading .chip:hover {
+  border-color: #99f6e4;
+  background: #f0fdfa;
+}
+
+.olivia-first-reading .chip-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #6b8e23;
+  flex-shrink: 0;
+}
+
+.olivia-first-reading .chip-text {
+  color: #374151;
+}
+
+.olivia-first-reading .conversation-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.olivia-first-reading .xp-display {
+  text-align: right;
+}
+
+.olivia-first-reading .xp-display p:first-child {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.olivia-first-reading .xp-display p:last-child {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #6b8e23;
+}
+
+.olivia-first-reading .conversation-thread {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 1rem;
+}
+
+.olivia-first-reading .context-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  border: 1px solid #e5e7eb;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.olivia-first-reading .context-card p:first-child {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.olivia-first-reading .context-card p:last-child {
+  font-weight: 500;
+  color: #1f2937;
+}
+
+.olivia-first-reading .message {
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+.olivia-first-reading .message.user {
+  justify-content: flex-end;
+}
+
+.olivia-first-reading .message.olivia {
+  justify-content: flex-start;
+}
+
+.olivia-first-reading .message-bubble {
+  max-width: 80%;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.olivia-first-reading .message.user .message-bubble {
+  background: #6b8e23;
+  color: white;
+}
+
+.olivia-first-reading .message.olivia .message-bubble {
+  background: white;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.olivia-first-reading .message-text {
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.olivia-first-reading .message.user .message-text {
+  color: white;
+}
+
+.olivia-first-reading .message.olivia .message-text {
+  color: #374151;
+}
+
+.olivia-first-reading .xp-badge {
+  font-size: 0.75rem;
+  color: #a8b896;
+  margin-top: 0.5rem;
+}
+
+.olivia-first-reading .input-area {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.olivia-first-reading .input-field {
+  flex: 1;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 9999px;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  outline: none;
+}
+
+.olivia-first-reading .input-field:focus {
+  border-color: #99f6e4;
+}
+
+.olivia-first-reading .send-btn {
+  width: 3rem;
+  height: 3rem;
+  background: #6b8e23;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.olivia-first-reading .send-btn:hover {
+  background: #556b2f;
+}
+
+.olivia-first-reading .scrollable {
+  overflow-y: auto;
+  flex: 1;
+}
+
+.olivia-first-reading .back-button {
+  background: transparent;
+  border: none;
+  color: #6b7280;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.2s;
+  margin-bottom: 1rem;
+}
+
+.olivia-first-reading .back-button:hover {
+  color: #6b8e23;
+}
+
+.olivia-first-reading .back-button span {
+  font-size: 0.875rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.olivia-first-reading .save-button {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: white;
+  border: 2px solid #6b8e23;
+  color: #6b8e23;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  z-index: 1000;
+}
+
+.olivia-first-reading .save-button:hover {
+  background: #6b8e23;
+  color: white;
+  transform: scale(1.05);
+}
+
+.olivia-first-reading .save-button.saved {
+  background: #6b8e23;
+  color: white;
+  border-color: #6b8e23;
+}
+
+.olivia-first-reading .save-icon {
+  font-size: 1rem;
+}
+
+@media (max-width: 640px) {
+  .olivia-first-reading .save-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+  }
+}

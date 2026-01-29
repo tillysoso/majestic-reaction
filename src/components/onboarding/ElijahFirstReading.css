@@ -1,0 +1,653 @@
+.elijah-first-reading {
+  font-family: 'Courier New', monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  min-height: 100vh;
+  color: #e0e0e0;
+}
+
+.elijah-first-reading .container {
+  padding: 3rem 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.elijah-first-reading .header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.elijah-first-reading .avatar-icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #a855f7, #ec4899);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.5);
+  animation: float-elijah 3s ease-in-out infinite;
+}
+
+@keyframes float-elijah {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.elijah-first-reading .glitch {
+  animation: glitch-elijah 3s infinite;
+}
+
+@keyframes glitch-elijah {
+  0%, 90%, 100% { transform: translate(0); }
+  92% { transform: translate(-2px, 2px); }
+  94% { transform: translate(2px, -2px); }
+  96% { transform: translate(-2px, -2px); }
+  98% { transform: translate(2px, 2px); }
+}
+
+.elijah-first-reading .avatar-info h2 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #a855f7;
+  text-shadow: 0 0 10px rgba(168, 85, 247, 0.5);
+}
+
+.elijah-first-reading .avatar-info p {
+  font-size: 0.875rem;
+  color: #94a3b8;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.elijah-first-reading .content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.elijah-first-reading .message-box {
+  background: rgba(30, 30, 50, 0.8);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 0 30px rgba(168, 85, 247, 0.2);
+  border: 2px solid rgba(168, 85, 247, 0.3);
+  margin-bottom: 2rem;
+}
+
+.elijah-first-reading .message-box p {
+  color: #e0e0e0;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.elijah-first-reading .message-box p:last-child {
+  margin-bottom: 0;
+}
+
+.elijah-first-reading .meme-reference {
+  background: rgba(168, 85, 247, 0.1);
+  padding: 0.75rem;
+  border-left: 3px solid #a855f7;
+  margin: 1rem 0;
+  font-style: italic;
+}
+
+.elijah-first-reading .btn-primary {
+  width: 100%;
+  background: linear-gradient(135deg, #a855f7, #ec4899);
+  color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family: 'Courier New', monospace;
+  text-transform: lowercase;
+  letter-spacing: 0.05em;
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.3);
+}
+
+.elijah-first-reading .btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(168, 85, 247, 0.5);
+}
+
+.elijah-first-reading .card-display {
+  width: 16rem;
+  height: 24rem;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border-radius: 1rem;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #a855f7;
+}
+
+.elijah-first-reading .card-display::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+  animation: shimmer-elijah 3s infinite;
+}
+
+@keyframes shimmer-elijah {
+  0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+  100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+}
+
+.elijah-first-reading .card-content {
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+.elijah-first-reading .card-number {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-shadow: 0 0 20px rgba(255,255,255,0.5);
+}
+
+.elijah-first-reading .card-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-shadow: 0 0 10px rgba(255,255,255,0.5);
+}
+
+.elijah-first-reading .card-info {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.elijah-first-reading .card-info h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #a855f7;
+  letter-spacing: 0.1em;
+  text-shadow: 0 0 10px rgba(168, 85, 247, 0.5);
+}
+
+.elijah-first-reading .keywords {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.elijah-first-reading .keyword {
+  padding: 0.5rem 1rem;
+  background: rgba(168, 85, 247, 0.2);
+  color: #e9d5ff;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  border: 1px solid rgba(168, 85, 247, 0.5);
+  text-transform: lowercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+.elijah-first-reading .shuffling-screen {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.elijah-first-reading .shuffling-card {
+  width: 8rem;
+  height: 12rem;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+  animation: pulse-rotate-elijah 2s infinite;
+  border: 2px solid #a855f7;
+}
+
+@keyframes pulse-rotate-elijah {
+  0%, 100% { opacity: 1; transform: rotate(0deg) scale(1); }
+  25% { transform: rotate(5deg) scale(1.05); }
+  50% { opacity: 0.7; transform: rotate(-5deg) scale(0.95); }
+  75% { transform: rotate(5deg) scale(1.05); }
+}
+
+.elijah-first-reading .shuffling-text {
+  color: #94a3b8;
+  animation: pulse-elijah 2s infinite;
+  font-family: 'Courier New', monospace;
+  text-transform: lowercase;
+}
+
+@keyframes pulse-elijah {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.elijah-first-reading .mini-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(30, 30, 50, 0.8);
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.2);
+  border: 2px solid rgba(168, 85, 247, 0.3);
+  margin-bottom: 1.5rem;
+}
+
+.elijah-first-reading .mini-card-img {
+  width: 4rem;
+  height: 6rem;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.elijah-first-reading .mini-card-info h3 {
+  font-weight: 600;
+  color: #a855f7;
+}
+
+.elijah-first-reading .mini-card-info p {
+  font-size: 0.875rem;
+  color: #94a3b8;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.elijah-first-reading .interpretation-box {
+  background: rgba(30, 30, 50, 0.8);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.2);
+  border: 2px solid rgba(168, 85, 247, 0.3);
+  margin-bottom: 1.5rem;
+}
+
+.elijah-first-reading .elijah-message {
+  display: flex;
+  gap: 0.75rem;
+  align-items: start;
+}
+
+.elijah-first-reading .elijah-avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #a855f7, #ec4899);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 1.25rem;
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.5);
+}
+
+.elijah-first-reading .elijah-text {
+  flex: 1;
+  color: #e0e0e0;
+  line-height: 1.6;
+  white-space: pre-line;
+}
+
+.elijah-first-reading .strengths-box {
+  background: rgba(30, 30, 50, 0.8);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.2);
+  border: 2px solid rgba(168, 85, 247, 0.3);
+  margin-bottom: 1.5rem;
+}
+
+.elijah-first-reading .strengths-box h4 {
+  font-weight: 600;
+  color: #a855f7;
+  margin-bottom: 1rem;
+  text-transform: lowercase;
+  letter-spacing: 0.05em;
+}
+
+.elijah-first-reading .item {
+  display: flex;
+  gap: 0.75rem;
+  align-items: start;
+  margin-bottom: 0.75rem;
+}
+
+.elijah-first-reading .item:last-child {
+  margin-bottom: 0;
+}
+
+.elijah-first-reading .symbol {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.elijah-first-reading .item-content p:first-child {
+  font-weight: 600;
+  color: #e9d5ff;
+  font-size: 0.875rem;
+  margin-bottom: 0.25rem;
+  text-transform: lowercase;
+}
+
+.elijah-first-reading .item-content p:last-child {
+  color: #94a3b8;
+  font-size: 0.875rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.elijah-first-reading .affirmation-box {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+  margin-bottom: 1.5rem;
+  border: 2px solid #a855f7;
+}
+
+.elijah-first-reading .affirmation-box p {
+  color: white;
+  text-align: center;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.6;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.elijah-first-reading .chips-section {
+  margin-top: auto;
+}
+
+.elijah-first-reading .chips-label {
+  color: #94a3b8;
+  font-size: 0.875rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  text-transform: lowercase;
+}
+
+.elijah-first-reading .chip {
+  width: 100%;
+  background: rgba(30, 30, 50, 0.8);
+  border: 2px solid rgba(168, 85, 247, 0.3);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-align: left;
+  color: #e0e0e0;
+}
+
+.elijah-first-reading .chip:hover {
+  border-color: #a855f7;
+  background: rgba(168, 85, 247, 0.1);
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.3);
+  transform: translateX(5px);
+}
+
+.elijah-first-reading .chip-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  flex-shrink: 0;
+  font-size: 1.25rem;
+}
+
+.elijah-first-reading .chip-text {
+  color: #e0e0e0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.elijah-first-reading .conversation-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.elijah-first-reading .xp-display {
+  text-align: right;
+}
+
+.elijah-first-reading .xp-display p:first-child {
+  font-size: 0.875rem;
+  color: #94a3b8;
+  text-transform: lowercase;
+}
+
+.elijah-first-reading .xp-display p:last-child {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #a855f7;
+  text-shadow: 0 0 10px rgba(168, 85, 247, 0.5);
+}
+
+.elijah-first-reading .conversation-thread {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 1rem;
+}
+
+.elijah-first-reading .context-card {
+  background: rgba(30, 30, 50, 0.8);
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.2);
+  border: 2px solid rgba(168, 85, 247, 0.3);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.elijah-first-reading .context-card p:first-child {
+  font-size: 0.875rem;
+  color: #94a3b8;
+  text-transform: lowercase;
+}
+
+.elijah-first-reading .context-card p:last-child {
+  font-weight: 600;
+  color: #a855f7;
+}
+
+.elijah-first-reading .message {
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+.elijah-first-reading .message.user {
+  justify-content: flex-end;
+}
+
+.elijah-first-reading .message.elijah {
+  justify-content: flex-start;
+}
+
+.elijah-first-reading .message-bubble {
+  max-width: 80%;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.elijah-first-reading .message.user .message-bubble {
+  background: linear-gradient(135deg, #a855f7, #ec4899);
+  color: white;
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.3);
+}
+
+.elijah-first-reading .message.elijah .message-bubble {
+  background: rgba(30, 30, 50, 0.8);
+  border: 2px solid rgba(168, 85, 247, 0.3);
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.2);
+}
+
+.elijah-first-reading .message-text {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.elijah-first-reading .message.user .message-text {
+  color: white;
+}
+
+.elijah-first-reading .message.elijah .message-text {
+  color: #e0e0e0;
+}
+
+.elijah-first-reading .xp-badge {
+  font-size: 0.75rem;
+  color: #fbbf24;
+  margin-top: 0.5rem;
+  text-transform: lowercase;
+}
+
+.elijah-first-reading .input-area {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.elijah-first-reading .input-field {
+  flex: 1;
+  background: rgba(30, 30, 50, 0.8);
+  border: 2px solid rgba(168, 85, 247, 0.3);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  outline: none;
+  color: #e0e0e0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.elijah-first-reading .input-field:focus {
+  border-color: #a855f7;
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.3);
+}
+
+.elijah-first-reading .send-btn {
+  width: 3rem;
+  height: 3rem;
+  background: linear-gradient(135deg, #a855f7, #ec4899);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 1.2rem;
+  font-weight: bold;
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.3);
+}
+
+.elijah-first-reading .send-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 30px rgba(168, 85, 247, 0.5);
+}
+
+.elijah-first-reading .scrollable {
+  overflow-y: auto;
+  flex: 1;
+}
+
+.elijah-first-reading .back-button {
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s;
+  margin-bottom: 1rem;
+  font-family: 'Courier New', monospace;
+  text-transform: lowercase;
+}
+
+.elijah-first-reading .back-button:hover {
+  color: #a855f7;
+  transform: translateX(-5px);
+}
+
+.elijah-first-reading .back-button span {
+  font-size: 0.875rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.elijah-first-reading .save-button {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(30, 30, 50, 0.9);
+  border: 2px solid #a855f7;
+  color: #a855f7;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  z-index: 1000;
+  font-family: 'Courier New', monospace;
+  text-transform: lowercase;
+}
+
+.elijah-first-reading .save-button:hover {
+  background: linear-gradient(135deg, #a855f7, #ec4899);
+  color: white;
+  border-color: #ec4899;
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(168, 85, 247, 0.5);
+}
+
+.elijah-first-reading .save-button.saved {
+  background: linear-gradient(135deg, #a855f7, #ec4899);
+  color: white;
+  border-color: #a855f7;
+}
+
+.elijah-first-reading .save-icon {
+  font-size: 1rem;
+}
+
+@media (max-width: 640px) {
+  .elijah-first-reading .save-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+  }
+}

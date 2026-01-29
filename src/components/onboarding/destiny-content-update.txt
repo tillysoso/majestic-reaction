@@ -1,0 +1,24 @@
+Content updates needed for DestinyFirstReading.tsx:
+
+dailyDrawIntro: 
+"The Chariot: A Study in Directed Will
+
+The Chariot speaks to the convergence of intention and action. This is not impulsive movement—it is purposeful momentum. Consider it the difference between scattered effort and focused trajectory.
+
+The Three-Phase Framework:
+1. Clarity: Define the destination with precision
+2. Commitment: Align your resources toward that endpoint  
+3. Course Correction: Adjust as needed without losing direction
+
+The card invites you to examine: What would it look like to move forward with both confidence and flexibility?
+
+Reflection: The Chariot doesn't promise an easy path. It promises that the path exists—and that you have what you need to walk it."
+
+affirmation: "I trust my direction. I adjust my approach without losing my way."
+
+questions:
+- { id: 'love', text: 'How does this apply to relationships?', icon: '🌸' }
+- { id: 'stuck', text: "I'm feeling uncertain...", icon: '🌾' }
+- { id: 'career', text: 'What about my career path?', icon: '🌳' }
+
+Status: Content documented for manual update if needed.
