@@ -1,4 +1,4 @@
-// shared/spreadCalculations.ts
+
 // Birth card and daily card calculations - shared between frontend and backend
 
 export interface SpreadPosition {

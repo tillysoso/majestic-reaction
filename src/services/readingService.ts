@@ -1,8 +1,8 @@
 // services/readingService.ts
 // Generic reading generation before avatar personalization
 
-import { getCardById, TarotCard } from '@/shared/cardData';
-import { getSpreadPositions, SpreadPosition } from '@/shared/spreadCalculations';
+import { getCardById, TarotCard } from '../shared/cardData';
+import { getSpreadPositions, SpreadPosition } from '../shared/spreadCalculations';
 
 export interface GenericCardInterpretation {
   cardId: string;
@@ -27,13 +27,15 @@ export function generateGenericReading(
   spreadType: 'daily' | 'threespread' | 'birthcard',
   userQuestion?: string
 ): GenericReading | null {
-  const positions = getSpreadPositions(spreadType);
-  
-  if (cardIds.length !== positions.length && spreadType !== 'birthcard') {
-    console.error(`Card count mismatch: expected ${positions.length}, got ${cardIds.length}`);
-    return null;
+  let positions: SpreadPosition[] = [];
+  if (spreadType === 'daily' || spreadType === 'threespread') {
+    positions = getSpreadPositions(spreadType);
+    if (cardIds.length !== positions.length) {
+      console.error(`Card count mismatch: expected ${positions.length}, got ${cardIds.length}`);
+      return null;
+    }
   }
-  
+
   // For birth card reading, use single position
   const effectivePositions = spreadType === 'birthcard' 
     ? [{
