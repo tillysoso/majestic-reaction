@@ -11,7 +11,7 @@ import {
   getBirthCardId,
   getDailyCardId,
   isCardImplemented,
-  formatBirthDate 
+   
 } from '@/shared/spreadCalculations';
 import { useAllAvatars, useAvatarData } from '@/hooks/useAvatarTheme';
 import './SystemDemo.css';
