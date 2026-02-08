@@ -164,3 +164,16 @@ export function getReadingContext(
   
   return context;
 }
+
+export function formatBirthDate(date: Date | string): string {
+  // Convert to Date object if it's a string
+  const dateObj = typeof date === 'string' ? new Date(date) : date;
+  
+  // Format as MM/DD/YYYY or whatever format you want
+  const month = String(dateObj.getMonth() + 1).padStart(2, '0');
+  const day = String(dateObj.getDate()).padStart(2, '0');
+  const year = dateObj.getFullYear();
+  
+  return `${month}/${day}/${year}`;
+}
+
